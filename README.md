@@ -2,9 +2,9 @@
 
 neo is a Neovim-branded colorscheme.
 
-# Show me!
+# Examples
 
-Below screens are temporary while I torture test and run through and adapt
+The below screens are temporary while I torture test and run through and adapt
 the colorscheme tests tooling at [vim/colorschemes](https://github.com/vim/colorschemes).
 
 ## Code and configuration sample
@@ -48,8 +48,7 @@ colorscheme updates to ensure consistency and predicability
 * follows best practices in color theory in terms of colour grouping schemes
 and cohesion
 * ANSI palette for `:terminal` buffers is based on the official Neovim green
-(`#`) and blue (`#`) as sampled from Neovim logos kit, and translated into
-closest 256 xterm-palette approximation.
+and blue
 
 ## Caveats and limitations
 
@@ -65,7 +64,8 @@ I'd love to be proven wrong, though!
 
 'neo' was designed around the official Neovim green and blue, translated them
 first into their closest approximate 256-colour in the [xterm-palette space](https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Xterm_256color_chart.svg/1404px-Xterm_256color_chart.svg.png).
-This xterm-ified green and blue were then desaturated to be provide a mid-contrast, comforting, eye-soothing palette.
+This xterm-ified green and blue were then desaturated to provide a mid-contrast,
+comforting palette.
 
 ## Inspiration and thanks
 
