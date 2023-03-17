@@ -9,7 +9,9 @@ the colorscheme tests tooling at [vim/colorschemes](https://github.com/vim/color
 
 ## Code and configuration sample
 
-[Some random person's init.lua](init_lua.png)
+Some random person's init.lua:
+
+![init.lua](init_lua.png)
 
 ## Terminal buffer examples
 
@@ -18,11 +20,15 @@ Pictures of the colorscheme being used as the palette for a terminal buffer.
 macOS's Terminal.app emulator palette hand-set to our palette (`termguicolors`
 is off):
 
-[Terminal buffer ANSI palette](color_test.png)
+![ANSI palette](color_test.png)
 
-[Lazygit in a terminal buffer](lazygit.png)
+lazygit in a terminal buffer:
 
-[tig in a terminal buffer](tig.png)
+![Lazygit in a terminal buffer](lazygit.png)
+
+tig in a terminal buffer:
+
+![tig](tig.png)
 
 ## Requirements
 
