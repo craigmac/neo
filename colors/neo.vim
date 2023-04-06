@@ -34,7 +34,7 @@ highlight! Normal ctermfg=250 ctermbg=234 cterm=NONE guifg=#bcbcbc guibg=#1c1c1c
 
 " Preferred groups, see `:h group-name`
 highlight! Comment ctermfg=244 ctermbg=NONE cterm=NONE guifg=#808080 guibg=NONE gui=NONE
-highlight! Constant ctermfg=110 ctermbg=NONE cterm=NONE guifg=#afaf87 guibg=NONE gui=NONE
+highlight! Constant ctermfg=110 ctermbg=NONE cterm=NONE guifg=#87afd7 guibg=NONE gui=NONE
 highlight! Identifier ctermfg=108 ctermbg=NONE cterm=NONE guifg=#87af87 guibg=NONE gui=NONE
 highlight! Statement ctermfg=139 ctermbg=NONE cterm=NONE guifg=#af87af guibg=NONE gui=NONE
 highlight! PreProc ctermfg=144 ctermbg=NONE cterm=NONE guifg=#afaf87 guibg=NONE gui=NONE
@@ -53,7 +53,7 @@ highlight! link TabLine StatuslineNC
 highlight! link TabLineSel Statusline
 highlight! link VertSplit TabLineFill
 
-highlight! MsgArea ctermfg=250 ctermbg=235 cterm=NONE guifg=#262626 guibg=#262626 gui=NONE
+highlight! MsgArea ctermfg=250 ctermbg=235 cterm=NONE guifg=#bcbcbc guibg=#262626 gui=NONE
 
 highlight! CursorLineNr ctermfg=150 ctermbg=234 cterm=NONE guifg=#afd787 guibg=#1c1c1c gui=NONE
 highlight! LineNr ctermfg=244 ctermbg=NONE cterm=NONE guifg=#808080 guibg=NONE gui=NONE
