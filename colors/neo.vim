@@ -1,5 +1,12 @@
 set background=dark
 
+" TODO: is hl-Ignore on neovim different?
+" TODO: how is WinSeparator different from VertSplit?
+" TODO: neovim WhiteSpace or something is added
+" TODO: test termguicolors
+" TODO: test GUI Spelling undercurls on actual GUI and wezterm/kitty/alacritty
+" TODO: set hl-User1 to User9 for `:h 'stl' usages` with same palette
+
 highlight clear
 let g:colors_name = 'neo'
 
@@ -21,13 +28,6 @@ if &termguicolors || has('gui_running')
   let g:terminal_color_14 = '#008787' " brightcyan
   let g:terminal_color_15 = '#e5e5e5' " brightwhite
 endif
-
-" TODO: is hl-Ignore on neovim different?
-" TODO: how is WinSeparator different from VertSplit?
-" TODO: neovim WhiteSpace or something is added
-" TODO: test termguicolors
-" TODO: test GUI Spelling undercurls on actual GUI and wezterm/kitty/alacritty
-" TODO: set hl-User1 to User9 for `:h 'stl' usages` with same palette
 
 " Must be set first
 highlight! Normal ctermfg=250 ctermbg=234 cterm=NONE guifg=#bcbcbc guibg=#1c1c1c gui=NONE
@@ -53,7 +53,7 @@ highlight! link TabLine StatuslineNC
 highlight! link TabLineSel Statusline
 highlight! link VertSplit TabLineFill
 
-highlight! MsgArea ctermfg=250 ctermbg=235 cterm=NONE guifg=#bcbcbc guibg=#262626 gui=NONE
+highlight! MsgArea ctermfg=250 ctermbg=234 cterm=NONE guifg=#bcbcbc guibg=#1c1c1c gui=NONE
 
 highlight! CursorLineNr ctermfg=150 ctermbg=234 cterm=NONE guifg=#afd787 guibg=#1c1c1c gui=NONE
 highlight! LineNr ctermfg=244 ctermbg=NONE cterm=NONE guifg=#808080 guibg=NONE gui=NONE
@@ -77,7 +77,7 @@ highlight! ModeMsg ctermfg=150 ctermbg=234 cterm=NONE guifg=#afd787 guibg=#1c1c1
 highlight! MoreMsg ctermfg=150 ctermbg=234 cterm=NONE guifg=#afd787 guibg=#1c1c1c gui=NONE
 highlight! Question ctermfg=150 ctermbg=234 cterm=NONE guifg=#afd787 guibg=#1c1c1c gui=NONE
 highlight! WarningMsg ctermfg=173 ctermbg=234 cterm=NONE guifg=#d7875f guibg=#1c1c1c gui=NONE
-highlight! MatchParen ctermfg=66 ctermbg=234 cterm=reverse guifg=#5f8787 guibg=#1c1c1c gui=NONE
+highlight! MatchParen ctermfg=66 ctermbg=234 cterm=reverse guifg=#5f8787 guibg=#1c1c1c gui=reverse
 highlight! Conceal ctermfg=244 ctermbg=NONE cterm=NONE guifg=#808080 guibg=NONE gui=NONE
 highlight! Title ctermfg=144 ctermbg=NONE cterm=NONE guifg=#afaf87 guibg=NONE gui=NONE
 highlight! Directory ctermfg=110 ctermbg=NONE cterm=NONE guifg=#afaf87 guibg=NONE gui=NONE
