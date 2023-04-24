@@ -10,23 +10,24 @@ set background=dark
 highlight clear
 let g:colors_name = 'neo'
 
+" Tomorrow Night palette - widely supported and tested for years
 if &termguicolors || has('gui_running')
-  let g:terminal_color_0 = '#303030' " black
-  let g:terminal_color_1 = '#af5f5f' " red
-  let g:terminal_color_2 = '#5faf5f' " green
-  let g:terminal_color_3 = '#d7af5f' " yellow
-  let g:terminal_color_4 = '#5f87d7' " blue
-  let g:terminal_color_5 = '#875faf' " magenta
-  let g:terminal_color_6 = '#008787' " cyan
-  let g:terminal_color_7 = '#d9d9d9' " white
-  let g:terminal_color_8 = '#808080' " gray
-  let g:terminal_color_9 = '#af5f5f' " brightred
-  let g:terminal_color_10 = '#5faf5f' " brightgreen
-  let g:terminal_color_11 = '#d7af5f' " brightyellow
-  let g:terminal_color_12 = '#5f87d7' " brightblue
-  let g:terminal_color_13 = '#875faf' " brightmagenta
-  let g:terminal_color_14 = '#008787' " brightcyan
-  let g:terminal_color_15 = '#e5e5e5' " brightwhite
+  let g:terminal_color_0 = '#1d1f21' " black
+  let g:terminal_color_1 = '#cc6666' " red
+  let g:terminal_color_2 = '#b5bd68' " green
+  let g:terminal_color_3 = '#f0c674' " yellow
+  let g:terminal_color_4 = '#81a2be' " blue
+  let g:terminal_color_5 = '#b294bb' " magenta
+  let g:terminal_color_6 = '#8abeb7' " cyan
+  let g:terminal_color_7 = '#c5c8c6' " white
+  let g:terminal_color_8 = '#666666' " gray/brightblack
+  let g:terminal_color_9 = '#d54e53' " brightred
+  let g:terminal_color_10 = '#b9ca4a' " brightgreen
+  let g:terminal_color_11 = '#e7c547' " brightyellow
+  let g:terminal_color_12 = '#7aa6da' " brightblue
+  let g:terminal_color_13 = '#c397d8' " brightmagenta
+  let g:terminal_color_14 = '#70c0b1' " brightcyan
+  let g:terminal_color_15 = '#eaeaea' " brightwhite
 endif
 
 " Must be set first
