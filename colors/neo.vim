@@ -6,6 +6,7 @@ set background=dark
 " TODO: test termguicolors
 " TODO: test GUI Spelling undercurls on actual GUI and wezterm/kitty/alacritty
 " TODO: set hl-User1 to User9 for `:h 'stl' usages` with same palette
+" TODO: diff orange might need tweaking
 
 highlight clear
 let g:colors_name = 'neo'
@@ -67,6 +68,8 @@ highlight! SignColumn ctermfg=NONE ctermbg=234 cterm=NONE guifg=NONE guibg=#1c1c
 highlight! CursorColumn ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#303030 gui=NONE
 highlight! ColorColumn ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#303030 gui=NONE
 highlight! CursorLine ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#303030 gui=NONE
+highlight! Cursor cterm=NONE ctermfg=NONE ctermbg=51 guibg=#00ffff guifg=NONE gui=NONE
+highlight! link lCursor Cursor
 
 highlight! Pmenu ctermfg=250 ctermbg=235 cterm=NONE guifg=#bcbcbc guibg=#262626 gui=NONE
 highlight! PmenuThumb ctermfg=250 ctermbg=250 cterm=NONE guifg=#bcbcbc guibg=#bcbcbc gui=NONE
@@ -105,7 +108,6 @@ highlight! SpellRare ctermfg=110 ctermbg=234 cterm=underline guisp=#87afd7 guibg
 
 highlight! DiffAdd ctermfg=234 ctermbg=108 cterm=NONE guifg=#1c1c1c guibg=#87af87 gui=NONE
 
-" TODO: these might need tweaking orange might need tweaking
 highlight! DiffDelete ctermfg=137 ctermbg=NONE cterm=NONE guifg=#af875f guibg=NONE gui=NONE
 highlight! DiffText ctermfg=234 ctermbg=188 cterm=NONE guifg=#1c1c1c guibg=#dfdfdf gui=NONE
 highlight! DiffChange ctermfg=234 ctermbg=145 cterm=NONE guifg=#1c1c1c guibg=#afafaf gui=NONE
