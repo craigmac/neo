@@ -68,7 +68,7 @@ highlight! SignColumn ctermfg=NONE ctermbg=234 cterm=NONE guifg=NONE guibg=#1c1c
 highlight! CursorColumn ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#303030 gui=NONE
 highlight! ColorColumn ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#303030 gui=NONE
 highlight! CursorLine ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#303030 gui=NONE
-highlight! Cursor cterm=NONE ctermfg=NONE ctermbg=51 guibg=#00ffff guifg=NONE gui=NONE
+highlight! Cursor cterm=reverse ctermfg=NONE ctermbg=NONE guibg=NONE guifg=NONE gui=reverse
 highlight! link lCursor Cursor
 
 highlight! Pmenu ctermfg=250 ctermbg=235 cterm=NONE guifg=#bcbcbc guibg=#262626 gui=NONE
@@ -81,7 +81,7 @@ highlight! ModeMsg ctermfg=150 ctermbg=234 cterm=NONE guifg=#afd787 guibg=#1c1c1
 highlight! MoreMsg ctermfg=150 ctermbg=234 cterm=NONE guifg=#afd787 guibg=#1c1c1c gui=NONE
 highlight! Question ctermfg=150 ctermbg=234 cterm=NONE guifg=#afd787 guibg=#1c1c1c gui=NONE
 highlight! WarningMsg ctermfg=173 ctermbg=234 cterm=NONE guifg=#d7875f guibg=#1c1c1c gui=NONE
-highlight! MatchParen ctermfg=66 ctermbg=234 cterm=reverse guifg=#5f8787 guibg=#1c1c1c gui=reverse
+highlight! MatchParen ctermfg=150 ctermbg=234 cterm=NONE guifg=#afd787 guibg=#1c1c1c gui=NONE
 highlight! Conceal ctermfg=244 ctermbg=NONE cterm=NONE guifg=#808080 guibg=NONE gui=NONE
 highlight! Title ctermfg=144 ctermbg=NONE cterm=NONE guifg=#afaf87 guibg=NONE gui=NONE
 highlight! Directory ctermfg=110 ctermbg=NONE cterm=NONE guifg=#afaf87 guibg=NONE gui=NONE
