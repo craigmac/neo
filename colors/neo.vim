@@ -47,7 +47,7 @@ highlight! Ignore ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui
 highlight! Error ctermfg=210 ctermbg=234 cterm=reverse guifg=#ff8787 guibg=#1c1c1c gui=reverse
 highlight! Todo ctermfg=144 ctermbg=234 cterm=reverse guifg=#afaf87 guibg=#1c1c1c gui=reverse
 
-highlight! Statusline ctermfg=234 ctermbg=247 cterm=NONE guifg=#1c1c1c guibg=#9e9e9e gui=NONE
+highlight! Statusline ctermfg=144 ctermbg=234 cterm=reverse guifg=#1c1c1c guibg=#afaf87 gui=NONE
 highlight! StatuslineNC ctermfg=234 ctermbg=243 cterm=NONE guifg=#1c1c1c guibg=#767676 gui=NONE
 highlight! TabLineFill ctermfg=235 ctermbg=235 cterm=NONE guifg=#262626 guibg=#262626 gui=NONE
 
