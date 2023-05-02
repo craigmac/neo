@@ -47,17 +47,21 @@ highlight! Ignore ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui
 highlight! Error ctermfg=210 ctermbg=234 cterm=reverse guifg=#ff8787 guibg=#1c1c1c gui=reverse
 highlight! Todo ctermfg=144 ctermbg=234 cterm=reverse guifg=#afaf87 guibg=#1c1c1c gui=reverse
 
-highlight! Statusline ctermfg=144 ctermbg=234 cterm=reverse guifg=#1c1c1c guibg=#afaf87 gui=NONE
-highlight! StatuslineNC ctermfg=234 ctermbg=243 cterm=NONE guifg=#1c1c1c guibg=#767676 gui=NONE
-highlight! TabLineFill ctermfg=235 ctermbg=235 cterm=NONE guifg=#262626 guibg=#262626 gui=NONE
+highlight! StatusLine ctermfg=234 ctermbg=144 cterm=NONE
+highlight! link TabLineSel StatusLine
+highlight! VertSplit ctermfg=238 ctermbg=234 cterm=NONE
+highlight! link WinBar StatusLine
+highlight! link NormalFloat Pmenu
 
-highlight! link TabLine StatuslineNC
-highlight! link TabLineSel Statusline
-highlight! link VertSplit TabLineFill
+highlight! StatuslineNC ctermfg=234 ctermbg=240 cterm=NONE
+highlight! link TabLine StatusLineNC
+highlight! link TabLineFill TabLine
+highlight! link WinBarNC StatusLineNC
+highlight! link NormalFloatNC Normal
 
 highlight! MsgArea ctermfg=250 ctermbg=234 cterm=NONE guifg=#bcbcbc guibg=#1c1c1c gui=NONE
 
-highlight! CursorLineNr ctermfg=150 ctermbg=234 cterm=NONE guifg=#afd787 guibg=#1c1c1c gui=NONE
+highlight! CursorLineNr ctermfg=144 ctermbg=234 cterm=NONE guifg=#afd787 guibg=#1c1c1c gui=NONE
 highlight! LineNr ctermfg=244 ctermbg=NONE cterm=NONE guifg=#808080 guibg=NONE gui=NONE
 highlight! LineNrAbove ctermfg=244 ctermbg=NONE cterm=NONE guifg=#808080 guibg=NONE gui=NONE
 highlight! LineNrBelow ctermfg=244 ctermbg=NONE cterm=NONE guifg=#808080 guibg=NONE gui=NONE
@@ -71,31 +75,32 @@ highlight! CursorLine ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#3030
 highlight! Cursor cterm=reverse ctermfg=NONE ctermbg=NONE guibg=NONE guifg=NONE gui=reverse
 highlight! link lCursor Cursor
 
-highlight! Pmenu ctermfg=250 ctermbg=235 cterm=NONE guifg=#bcbcbc guibg=#262626 gui=NONE
+highlight! Pmenu ctermfg=250 ctermbg=236 cterm=NONE guifg=#bcbcbc guibg=#262626 gui=NONE
 highlight! PmenuThumb ctermfg=250 ctermbg=250 cterm=NONE guifg=#bcbcbc guibg=#bcbcbc gui=NONE
 highlight! PmenuSbar ctermfg=238 ctermbg=238 cterm=NONE guifg=#444444 guibg=#444444 gui=NONE
-highlight! PmenuSel ctermfg=234 ctermbg=150 cterm=NONE guifg=#1c1c1c guibg=#afd787 gui=NONE
+highlight! PmenuSel ctermfg=234 ctermbg=144 cterm=NONE guifg=#1c1c1c guibg=#afd787 gui=NONE
 
 highlight! ErrorMsg ctermfg=210 ctermbg=234 cterm=reverse guifg=#ff8787 guibg=#1c1c1c gui=reverse
 highlight! ModeMsg ctermfg=150 ctermbg=234 cterm=NONE guifg=#afd787 guibg=#1c1c1c gui=NONE
 highlight! MoreMsg ctermfg=150 ctermbg=234 cterm=NONE guifg=#afd787 guibg=#1c1c1c gui=NONE
 highlight! Question ctermfg=150 ctermbg=234 cterm=NONE guifg=#afd787 guibg=#1c1c1c gui=NONE
 highlight! WarningMsg ctermfg=173 ctermbg=234 cterm=NONE guifg=#d7875f guibg=#1c1c1c gui=NONE
-highlight! MatchParen ctermfg=150 ctermbg=234 cterm=NONE guifg=#afd787 guibg=#1c1c1c gui=NONE
+highlight! MatchParen ctermfg=144 ctermbg=NONE cterm=NONE guifg=#afd787 guibg=#1c1c1c gui=NONE
 highlight! Conceal ctermfg=244 ctermbg=NONE cterm=NONE guifg=#808080 guibg=NONE gui=NONE
-highlight! Title ctermfg=144 ctermbg=NONE cterm=NONE guifg=#afaf87 guibg=NONE gui=NONE
+
+highlight! Title ctermfg=234 ctermbg=NONE cterm=NONE gui=NONE guifg=NONE guibg=NONE
 highlight! Directory ctermfg=110 ctermbg=NONE cterm=NONE guifg=#afaf87 guibg=NONE gui=NONE
 highlight! NonText ctermfg=244 ctermbg=NONE cterm=NONE guifg=#808080 guibg=NONE gui=NONE
 highlight! EndOfBuffer ctermfg=244 ctermbg=NONE cterm=NONE guifg=#808080 guibg=NONE gui=NONE
 highlight! SpecialKey ctermfg=244 ctermbg=NONE cterm=NONE guifg=#808080 guibg=NONE gui=NONE
 
-highlight! IncSearch ctermfg=234 ctermbg=185 cterm=NONE guifg=#1c1c1c guibg=#dfdf5f gui=NONE
-highlight! CurSearch ctermfg=234 ctermbg=150 cterm=NONE guifg=#1c1c1c guibg=#afd787 gui=NONE
-highlight! Search ctermfg=234 ctermbg=108 cterm=NONE guifg=#1c1c1c guibg=#87af87 gui=NONE
+highlight! IncSearch ctermfg=234 ctermbg=131 cterm=NONE guifg=#1c1c1c guibg=#dfdf5f gui=NONE
+highlight! link CurSearch IncSearch
+highlight! Search ctermfg=234 ctermbg=144 cterm=NONE guifg=#1c1c1c guibg=#87af87 gui=NONE
 
 highlight! QuickFixLine ctermfg=234 ctermbg=110 cterm=NONE guifg=#1c1c1c guibg=#afaf87 gui=NONE
-highlight! Visual ctermfg=234 ctermbg=150 cterm=NONE guifg=#1c1c1c guibg=#afd787 gui=NONE
-highlight! VisualNOS ctermfg=234 ctermbg=150 cterm=NONE guifg=#1c1c1c guibg=#afd787 gui=NONE
+highlight! Visual ctermfg=234 ctermbg=110 cterm=NONE guifg=#1c1c1c guibg=#afd787 gui=NONE
+highlight! VisualNOS ctermfg=234 ctermbg=110 cterm=NONE guifg=#1c1c1c guibg=#afd787 gui=NONE
 highlight! WildMenu ctermfg=234 ctermbg=150 cterm=NONE guifg=#1c1c1c guibg=#afd787 gui=NONE
 
 highlight! debugPC ctermfg=234 ctermbg=66 cterm=NONE guifg=#1c1c1c guibg=#5f875f gui=NONE
@@ -112,10 +117,4 @@ highlight! DiffDelete ctermfg=137 ctermbg=NONE cterm=NONE guifg=#af875f guibg=NO
 highlight! DiffText ctermfg=234 ctermbg=188 cterm=NONE guifg=#1c1c1c guibg=#dfdfdf gui=NONE
 highlight! DiffChange ctermfg=234 ctermbg=145 cterm=NONE guifg=#1c1c1c guibg=#afafaf gui=NONE
 
-highlight! link NormalFloat Pmenu
-highlight! link NormalFloatNC Normal
-
-highlight! link WinBar Statusline
-highlight! link WinBarNC StatuslineNC
-
-" vim: et ts=2 sw=2
+" vim: et ts=2 sw=2 fdm=marker
