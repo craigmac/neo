@@ -1,5 +1,6 @@
 set background=dark
 
+" TODO: figure out highlight vs. selected incsearch
 " TODO: is hl-Ignore on neovim different?
 " TODO: how is WinSeparator different from VertSplit?
 " TODO: neovim WhiteSpace or something is added
@@ -7,6 +8,18 @@ set background=dark
 " TODO: test GUI Spelling undercurls on actual GUI and wezterm/kitty/alacritty
 " TODO: set hl-User1 to User9 for `:h 'stl' usages` with same palette
 " TODO: diff orange might need tweaking
+" TODO: rethink TablineSel? because without tweaking
+" the default value it's hard to see 'windows open' number. Maybe ask
+" for a hi group for this number?
+" TODO: aiming for material-like consistency in that UI surfaces all follow a
+" predictable pattern: active UI surface vs inactive UI surface, etc.
+
+" TODO: can't just always link to StatusLine/NC because each
+" active/inactive surfaces need slightly different tweaks. Pmenu for
+" example doesn't work well with reverse because it will only hi chars up
+" until blank spot, it won't continue to end of Pmenu line.
+" TODO: search, incsearch, cursearch and linenr. try to harmonize all
+" 'selected' things? Thin
 
 highlight clear
 let g:colors_name = 'neo'
@@ -46,6 +59,22 @@ highlight! Underlined ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg
 highlight! Ignore ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 highlight! Error ctermfg=210 ctermbg=234 cterm=reverse guifg=#ff8787 guibg=#1c1c1c gui=reverse
 highlight! Todo ctermfg=144 ctermbg=234 cterm=reverse guifg=#afaf87 guibg=#1c1c1c gui=reverse
+
+" old working stuff in a pinch:
+" highlight! Statusline ctermfg=234 ctermbg=247 cterm=NONE guifg=#bcbcbc guibg=#9e9e9e gui=NONE
+" highlight! TabLineSel ctermfg=234 ctermbg=247 cterm=NONE guifg=#bcbcbc guibg=#9e9e9e gui=NONE
+" highlight! VertSplit ctermfg=234 ctermbg=247 cterm=reverse guifg=#bcbcbc guibg=#9e9e9e gui=NONE
+" highlight! link WinBar StatusLine
+" highlight! link NormalFloat Pmenu
+" highlight! StatuslineNC ctermfg=234 ctermbg=240 cterm=NONE
+" highlight! TabLine ctermfg=234 ctermbg=240 cterm=NONE
+" highlight! TabLineFill ctermfg=240 ctermbg=240 cterm=NONE
+" highlight! link WinBarNC StatusLineNC
+" highlight! link NormalFloatNC Normal
+
+" black 234
+" yellow 144
+" greys: 238, 236
 
 highlight! StatusLine ctermfg=234 ctermbg=144 cterm=NONE
 highlight! link TabLineSel StatusLine
