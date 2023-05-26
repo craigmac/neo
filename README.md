@@ -2,6 +2,8 @@
 
 neo is a Neovim-branded colorscheme.
 
+[](https://user-images.githubusercontent.com/7416158/241315221-0f8779fb-5875-4c3b-a63a-f0ab6a1722f7.png)
+
 # Examples
 
 The below screens are temporary while I torture test and run through and adapt
