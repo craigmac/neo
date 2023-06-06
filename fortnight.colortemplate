@@ -9,7 +9,6 @@ Description:   "a period of 14 days : two weeks" - Merriam Webster
 License:       Public domain
 ; Prefix for options: short name is used if this key is not present:
 Option Prefix: fortnight
-Neovim: yes
 ; }}}
 
 ; Documentation {{{
@@ -33,7 +32,7 @@ Include              -> PreProc
 Keyword              -> Statement
 Label                -> Statement
 Macro                -> PreProc
-MessageWindow        -> WarningMsg
+MessageWindow        -> Pmenu
 Number               -> Constant
 Operator             -> Statement
 PopupNotification    -> WarningMsg
@@ -49,37 +48,45 @@ StorageClass         -> Type
 String               -> Constant
 Structure            -> Type
 Tag                  -> Special
+Terminal             -> Normal
 Typedef              -> Type
 lCursor              -> Cursor
+CursorIM             -> Cursor
 ; }}}
 
 Background: dark
 
 ; Color palette {{{
 ; Color: name GUI Base256
-Color: black         #262626           ~
-Color: red           #CB8988           ~
-Color: green         #8FAE8A           ~
-Color: yellow        #EED090           ~
-Color: blue          #98B1C8           ~
-Color: magenta       #BCA7C5           ~
-Color: cyan          #A4C8C4           ~
-Color: white         #D0D0D0           ~
-Color: brightblack   #A8A8A8           ~
-Color: brightred     #CB8988           ~
-Color: brightgreen   #8FAE8A           ~
-Color: brightyellow  #EED090           ~
-Color: brightblue    #98B1C8           ~
-Color: brightmagenta #BCA7C5           ~
-Color: brightcyan    #A4C8C4           ~
-Color: brightwhite   #D0D0D0           ~
+Color: black         #262626           235
+Color: red           #CB8988           174
+Color: green         #8FAE8A           108
+Color: yellow        #AFAF87           144
+Color: blue          #98B1C8           110
+; fortnight v1 had:
+; Color: magenta       #BCA7C5           182
+; Color: cyan          #A4C8C4           152
+Color: magenta       #AF87AF           139
+Color: cyan          #87AFAF           109
+Color: white         #D0D0D0           252
+
+Color: brightblack   #A8A8A8           145
+Color: brightred     #CB8988           174
+Color: brightgreen   #8FAE8A           108
+Color: brightyellow  #EED090           144
+Color: brightblue    #98B1C8           110
+Color: brightmagenta #BCA7C5           182
+Color: brightcyan    #A4C8C4           152
+Color: brightwhite   #D0D0D0           252
 
 ; Define some 16-255 index colors:
-; Color: cursorline #262626 235
-Color: cursorline    #303030           ~
-Color: folded        #9e9e9e           ~
-Color: statusline    #afaf87           ~
-Color: statuslineNC  #444444           ~
+Color: cursorlngray  #303030           236        
+Color: foldedgray    #3a3a3a           237
+Color: stlyellow     #afaf87           144
+Color: stlNCgray     #444444           238
+Color: colorcol      #3a3a3a           237
+Color: orange        #d7af5f           179
+Color: comment       #6c6c6c           242
 ; }}}
 
 ; Terminal colors {{{
@@ -89,104 +96,69 @@ Term colors: brightblue brightmagenta brightcyan brightwhite
 ; }}}
 
 ; Default highlight groups {{{
-Variant: gui
-#if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
-Variant: 256
-#if get(g:, '@optionprefix_transp_bg', 0)
-Variant: gui 256
-    Normal white none
-    Terminal white none
-#else
-    Normal white black
-    Terminal white black
-#endif
+; GroupName          fg                bg                attributes
+Normal               white             black
 
-; GroupName fg bg attributes
-ColorColumn none cursorline
-Conceal brightblack none
-Cursor white black reverse
-CursorColumn none cursorline
-CursorLine none cursorline
-CursorLineNr yellow none
-DiffAdd black green
-DiffChange black yellow reverse
-DiffDelete black red reverse
-DiffText white blue bold,reverse
-Directory blue none
-EndOfBuffer brightblack none
-ErrorMsg red black reverse
-FoldColumn brightblack none
-Folded black folded
-IncSearch red black reverse
-LineNr brightblack none
-MatchParen yellow none
-ModeMsg white none
-MoreMsg white none
-NonText brightblack none
-Pmenu white black
-PmenuSbar white black
-PmenuSel white black reverse
-PmenuThumb white black
-Question white none
-Search black yellow
-SignColumn white none
-SpecialKey brightblack none
-SpellBad red none s=red undercurl
-SpellCap  blue none s=blue undercurl
-SpellLocal magenta none s=magenta undercurl
-SpellRare cyan none s=cyan undercurl
-StatusLine black statusline
-StatusLineNC statusline statuslineNC
-TabLine statusline statuslineNC
-TabLineFill statusline statuslineNC
-TabLineSel black statusline
-Title black none
-VertSplit white black
-Visual black blue
-VisualNOS black blue
-WarningMsg white none
-WildMenu white none
+ColorColumn          none              colorcol
+Conceal              brightblack       none
+Cursor               black             white
+CursorColumn         none              cursorlngray
+CursorLine           none              cursorlngray
+CursorLineNr         magenta           none
+debugPC              black             blue
+debugBreakpoint      black             orange
+DiffAdd              green             black             reverse
+DiffChange           yellow            black             reverse
+DiffDelete           red               black             reverse
+DiffText             blue              black             reverse
+Directory            blue              none
+EndOfBuffer          brightblack       none
+ErrorMsg             red               black             reverse
+Folded               white             foldedgray
+FoldColumn           foldedgray        black
+IncSearch            red               black             reverse
+LineNr               comment           none
+MatchParen           orange            none
+ModeMsg              green             black             reverse
+MoreMsg              cyan              none
+NonText              brightblack       none
+Pmenu                white             stlNCgray
+PmenuSbar            white             none
+PmenuSel             magenta           black             reverse
+PmenuThumb           white             black
+Question             green             none
+Search               black             yellow
+SignColumn           foldedgray        black
+SpecialKey           brightblack       none
+SpellBad             red               none              s=red undercurl
+SpellCap             blue              none              s=blue undercurl
+SpellLocal           magenta           none              s=magenta undercurl
+SpellRare            cyan              none              s=cyan undercurl
+StatusLine           black             stlyellow
+StatusLineNC         stlyellow         stlNCgray
+TabLine              stlyellow         stlNCgray
+TabLineFill          stlNCgray         stlNCgray
+TabLineSel           black             stlyellow
+; required none none here to pickup tablinesel/tabline colors
+Title                none              none
+VertSplit            white             black
+Visual               black             blue
+VisualNOS            black             cyan
+WarningMsg           orange            none
+WildMenu             white             none
 
-Comment brightblack none
-Constant magenta none
-Error red black reverse
-Identifier green none
-Ignore none none
-PreProc yellow none
-Special cyan none
-Statement blue none
-Todo yellow black reverse
-Type blue none
-Underlined white none
-CursorIM none fg
-; See `:help window-toolbar`
-ToolbarLine  none none
-ToolbarButton white cursorline bold
+Comment              comment           none
+Constant             magenta           none
+Error                red               black             reverse
+Identifier           green             none
+Ignore               none              none
+PreProc              yellow            none
+Special              cyan              none
+Statement            blue              none
+Todo                 yellow            black             reverse
+Type                 blue              none
+Underlined           none              none              underline
+ToolbarLine          white             stlNCgray
+ToolbarButton        black             white
 ; }}}
 
-; Additional Neovim highlight groups {{{
-; These aren't generated with Neovim: yes directive above
-debugPC white none
-debugBreakpoint white none
-DiagnosticError red none
-DiagnosticWarn yellow none
-DiagnosticDeprecated blue none
-FloatBorder white none
-FloatTitle white none
-MsgArea white none
-MsgSeparator white none
-NormalFloat white black
-NormalFloatNC white black
-NormalNC white black
-Substitute red none
-TermCursor white black reverse
-Whitespace brightblack none
-WinSeparator white none
-WinBar black statusline
-WinBarNC statuslineNC brightblack
-
-; }}}
-
-; B/W variant {{{
-; Include: _bw.colortemplate
-; }}}
