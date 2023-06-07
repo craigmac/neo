@@ -35,7 +35,7 @@ hi! link Operator Statement
 hi! link PopupNotification WarningMsg
 hi! link PopupSelected PmenuSel
 hi! link PreCondit PreProc
-hi! link QuickFixLine Search
+hi! link QuickFixLine PmenuSel
 hi! link Repeat Statement
 hi! link SpecialChar Special
 hi! link SpecialComment Special
