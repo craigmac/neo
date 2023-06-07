@@ -50,6 +50,8 @@ Terminal             -> Normal
 Typedef              -> Type
 lCursor              -> Cursor
 CursorIM             -> Cursor
+LineNrAbove          -> LineNr
+LineNrBelow          -> LineNr
 ; }}}
 
 Background: dark

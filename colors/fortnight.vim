@@ -49,6 +49,8 @@ hi! link Terminal Normal
 hi! link Typedef Type
 hi! link lCursor Cursor
 hi! link CursorIM Cursor
+hi! link LineNrAbove LineNr
+hi! link LineNrBelow LineNr
 
 if (has('termguicolors') && &termguicolors) || has('gui_running')
   let g:terminal_ansi_colors = ['#262626', '#cb8988', '#8fae8a', '#afaf87', '#98b1c8', '#af87af', '#87afaf', '#d0d0d0', '#a8a8a8', '#cb8988', '#8fae8a', '#eed090', '#98b1c8', '#bca7c5', '#a4c8c4', '#d0d0d0']
