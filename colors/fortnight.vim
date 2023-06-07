@@ -116,8 +116,8 @@ hi TabLineFill guifg=#444444 guibg=#444444 gui=NONE cterm=NONE
 hi TabLineSel guifg=#262626 guibg=#afaf87 gui=NONE cterm=NONE
 hi Title guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi VertSplit guifg=#d0d0d0 guibg=#262626 gui=NONE cterm=NONE
-hi Visual guifg=#262626 guibg=#98b1c8 gui=NONE cterm=NONE
-hi VisualNOS guifg=#262626 guibg=#87afaf gui=NONE cterm=NONE
+hi Visual guifg=NONE guibg=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
+hi VisualNOS guifg=NONE guibg=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
 hi WarningMsg guifg=#d7af5f guibg=NONE gui=NONE cterm=NONE
 hi WildMenu guifg=#d0d0d0 guibg=NONE gui=NONE cterm=NONE
 hi Comment guifg=#6c6c6c guibg=NONE gui=NONE cterm=NONE
@@ -178,8 +178,8 @@ if s:t_Co >= 256
   hi TabLineSel ctermfg=235 ctermbg=144 cterm=NONE
   hi Title ctermfg=NONE ctermbg=NONE cterm=NONE
   hi VertSplit ctermfg=252 ctermbg=235 cterm=NONE
-  hi Visual ctermfg=235 ctermbg=110 cterm=NONE
-  hi VisualNOS ctermfg=235 ctermbg=109 cterm=NONE
+  hi Visual ctermfg=NONE ctermbg=NONE cterm=reverse
+  hi VisualNOS ctermfg=NONE ctermbg=NONE cterm=underline
   hi WarningMsg ctermfg=179 ctermbg=NONE cterm=NONE
   hi WildMenu ctermfg=252 ctermbg=NONE cterm=NONE
   hi Comment ctermfg=242 ctermbg=NONE cterm=NONE

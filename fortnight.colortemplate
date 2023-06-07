@@ -143,8 +143,8 @@ TabLineSel           black             stlyellow
 ; required none none here to pickup tablinesel/tabline colors
 Title                none              none
 VertSplit            white             black
-Visual               black             blue
-VisualNOS            black             cyan
+Visual               none              none              reverse
+VisualNOS            none              none              underline
 WarningMsg           orange            none
 WildMenu             white             none
 
