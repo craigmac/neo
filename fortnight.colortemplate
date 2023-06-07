@@ -9,10 +9,8 @@ Description:   "a period of 14 days : two weeks" - Merriam Webster
 License:       Public domain
 ; Prefix for options: short name is used if this key is not present:
 Option Prefix: fortnight
-; }}}
-
-; Documentation {{{
-; Include: _help.colortemplate
+Neovim: yes
+Colortemplate Options: timestamp=0
 ; }}}
 
 ; Common linked groups {{{
