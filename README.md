@@ -1,36 +1,31 @@
-neo is a colorscheme inspired by the Neovim project's logo that works and looks the
-same anywhere nvim can run.
+fortnight is a colorscheme that supports both Vim and Neovim, and looks the
+same in TUI as it does in the GUI (no downgraded experience).
 
-It takes inspiration from [apprentice](https://github.com/romainl/apprentice),
-[habamax](https://github.com/habamax/vim-habamax), and the VS Code default dark.
+It takes inspiration from
+[Tomorrow Night](https://github.com/chriskempson/tomorrow-theme#tomorrow-night),
+[apprentice](https://github.com/romainl/apprentice), and
+[habamax](https://github.com/habamax/vim-habamax).
 
-Terminal.app on macOS (only 256 colours supported, `:set notermguicolors`):
+It originated with my fixes to the terminal palette for Tomorrow Night, to
+better differentiate it's yellow from green, and then took on a life of its own.
 
-![](https://user-images.githubusercontent.com/7416158/242019061-d5572c8a-5c3d-4cf0-b0f1-7bbba0f38fcb.png)
+Terminal.app on macOS:
+
+![]()
 
 nvim-qt on macOS (`:set termguicolors` enabled):
 
-![](https://user-images.githubusercontent.com/7416158/242020361-37132684-a6f4-43bb-b8a0-d3c7d73054aa.png)
+![]()
 
 ## Features
 
-* consistency - colours look exactly the same with `termguicolors` option turned on or off, no 'downgrading'
+* consistency - colours look exactly the same with `termguicolors` option
+turned on or off, no 'downgrading'
 * low requirements - no bold font required, no italic font required
-* ANSI palette for `:terminal` buffers uses the Tomorrow Night palette, which
-has been battle tested for years now (default Alacritty theme as well)
-* maintainable - a single file, no importing or convoluted local helper functions, easily hackable
+* maintainable - built with
+[vim-colortemplate](https://github.com/lifepillar/vim-colortemplate) to ensure
+it is easily hackable and standardized
 * lean - no specific plugins "supported", that's left to the user
-
-## Requirements
-
-A 256 colour capable terminal, and Neovim.
-Neovim assumes 256 colour capabilities at a minimum, so there was no need to
-design 8/16-colour versions.
-
-## Process
-
-The official Neovim blue and green were translated into 256 xterm palette space first, then desaturated
-into the 40-60% range. These provided the two base colours, and the rest was designed with these in mind.
 
 ## Inspiration and thanks
 
@@ -39,9 +34,6 @@ shipped with Vim 9.0. We share some similar colour values and I took a lot
 of comfort knowing these colors have already been out in use in the wild for a
 bit now (and also for just being a great colorscheme).
 * [apprentice](https://github.com/romainl/apprentice), for changing the game.
-* [neovim.io](https://neovim.io) for the official colour references
 * [vim/colorschemes](https://github.com/vim/colorschemes), for the tooling,
-wisdom, and best practices
-* VS Code Dark default colorscheme for such a well-thought out and balanced
-approach
+wisdom, and best practices approach
 * You, if you're trying it out! Help and constructive comments are welcome!
