@@ -2,15 +2,22 @@
 
 ; Information {{{
 ; Mandatory
-Full name:     Fortnight
-Short name:    fortnight
-Author:        C.D. MacEachern <craig.daniel.maceachern@gmail.com>
-Description:   "a period of 14 days : two weeks" - Merriam Webster
-License:       Public domain
+Full name:           Fortnight
+Short name:          fortnight
+Author:              C.D. MacEachern <craig.daniel.maceachern@gmail.com>
+; Optional
+Maintainer:          C.D. MacEachern <craig.daniel.maceachern@gmail.com>
+Website:             https://github.com/vim/colorschemes
+Description:         "a period of 14 days : two weeks" - Merriam Webster
+License:             Public domain
 ; Prefix for options: short name is used if this key is not present:
-Option Prefix: fortnight
-Neovim: yes
+Option Prefix:       fortnight
+Neovim:              yes
 Colortemplate Options: timestamp=0
+; }}}
+
+; Documentation {{{
+; Include: _help.colortemplate
 ; }}}
 
 ; Common linked groups {{{
@@ -18,6 +25,7 @@ Boolean              -> Constant
 Character            -> Constant
 Conditional          -> Statement
 CurSearch            -> IncSearch
+CursorIM             -> Cursor
 CursorLineFold       -> FoldColumn
 CursorLineSign       -> SignColumn
 Debug                -> Special
@@ -28,14 +36,23 @@ Float                -> Constant
 Function             -> Identifier
 Include              -> PreProc
 Keyword              -> Statement
+lCursor              -> Cursor
 Label                -> Statement
+LineNrAbove          -> LineNr
+LineNrBelow          -> LineNr
 Macro                -> PreProc
+; default was WarningMsg
 MessageWindow        -> Pmenu
 Number               -> Constant
 Operator             -> Statement
+PmenuKind            -> Pmenu
+PmenuKindSel         -> PmenuSel
+PmenuExtra           -> Pmenu
+PmenuExtraSel        -> PmenuSel
 PopupNotification    -> WarningMsg
 PopupSelected        -> PmenuSel
 PreCondit            -> PreProc
+; default was Search
 QuickFixLine         -> PmenuSel
 Repeat               -> Statement
 SpecialChar          -> Special
@@ -48,28 +65,20 @@ Structure            -> Type
 Tag                  -> Special
 Terminal             -> Normal
 Typedef              -> Type
-lCursor              -> Cursor
-CursorIM             -> Cursor
-LineNrAbove          -> LineNr
-LineNrBelow          -> LineNr
 ; }}}
 
 Background: dark
 
 ; Color palette {{{
-; Color: name GUI Base256
+; Color: name        GUI               Base256
 Color: black         #262626           235
 Color: red           #CB8988           174
 Color: green         #8FAE8A           108
 Color: yellow        #AFAF87           144
 Color: blue          #98B1C8           110
-; fortnight v1 had:
-; Color: magenta       #BCA7C5           182
-; Color: cyan          #A4C8C4           152
 Color: magenta       #AF87AF           139
 Color: cyan          #87AFAF           109
 Color: white         #D0D0D0           252
-
 Color: brightblack   #A8A8A8           145
 Color: brightred     #CB8988           174
 Color: brightgreen   #8FAE8A           108
@@ -98,6 +107,7 @@ Term colors: brightblue brightmagenta brightcyan brightwhite
 
 ; Default highlight groups {{{
 ; GroupName          fg                bg                attributes
+; Normal must be defined first
 Normal               white             black
 
 ColorColumn          none              colorcol
@@ -146,7 +156,7 @@ VertSplit            white             black
 Visual               none              none              reverse
 VisualNOS            none              none              underline
 WarningMsg           orange            none
-WildMenu             white             none
+WildMenu             black             magenta
 
 Comment              comment           none
 Constant             magenta           none
@@ -163,3 +173,9 @@ ToolbarLine          white             stlNCgray
 ToolbarButton        black             white
 ; }}}
 
+; Additional highlight groups {{{
+; }}}
+
+; B/W variant {{{
+Include: _bw.colortemplate
+; }}}
