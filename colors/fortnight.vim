@@ -89,9 +89,9 @@ hi CursorLineNr guifg=#af87af guibg=NONE gui=NONE cterm=NONE
 hi debugPC guifg=#262626 guibg=#98b1c8 gui=NONE cterm=NONE
 hi debugBreakpoint guifg=#262626 guibg=#d7af5f gui=NONE cterm=NONE
 hi DiffAdd guifg=#8fae8a guibg=#262626 gui=reverse cterm=reverse
-hi DiffChange guifg=#afaf87 guibg=#262626 gui=reverse cterm=reverse
+hi DiffChange guifg=#98b1c8 guibg=#262626 gui=reverse cterm=reverse
 hi DiffDelete guifg=#cb8988 guibg=#262626 gui=reverse cterm=reverse
-hi DiffText guifg=#98b1c8 guibg=#262626 gui=reverse cterm=reverse
+hi DiffText guifg=#d0d0d0 guibg=#262626 gui=reverse cterm=reverse
 hi Directory guifg=#98b1c8 guibg=NONE gui=NONE cterm=NONE
 hi EndOfBuffer guifg=#a8a8a8 guibg=NONE gui=NONE cterm=NONE
 hi ErrorMsg guifg=#cb8988 guibg=#262626 gui=reverse cterm=reverse
@@ -151,9 +151,9 @@ if s:t_Co >= 256
   hi debugPC ctermfg=235 ctermbg=110 cterm=NONE
   hi debugBreakpoint ctermfg=235 ctermbg=179 cterm=NONE
   hi DiffAdd ctermfg=108 ctermbg=235 cterm=reverse
-  hi DiffChange ctermfg=144 ctermbg=235 cterm=reverse
+  hi DiffChange ctermfg=110 ctermbg=235 cterm=reverse
   hi DiffDelete ctermfg=174 ctermbg=235 cterm=reverse
-  hi DiffText ctermfg=110 ctermbg=235 cterm=reverse
+  hi DiffText ctermfg=252 ctermbg=235 cterm=reverse
   hi Directory ctermfg=110 ctermbg=NONE cterm=NONE
   hi EndOfBuffer ctermfg=145 ctermbg=NONE cterm=NONE
   hi ErrorMsg ctermfg=174 ctermbg=235 cterm=reverse

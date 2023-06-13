@@ -119,9 +119,9 @@ CursorLineNr         magenta           none
 debugPC              black             blue
 debugBreakpoint      black             orange
 DiffAdd              green             black             reverse
-DiffChange           yellow            black             reverse
+DiffChange           blue              black             reverse
 DiffDelete           red               black             reverse
-DiffText             blue              black             reverse
+DiffText             white             black             reverse
 Directory            blue              none
 EndOfBuffer          brightblack       none
 ErrorMsg             red               black             reverse
